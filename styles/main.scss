@@ -1,0 +1,8 @@
+@use 'tools';
+@use 'components/header';
+@use 'components/main';
+@use 'components/footer';
+
+body{
+    background-color: var(--background-color)
+}

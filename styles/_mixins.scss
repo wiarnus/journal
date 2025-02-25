@@ -1,0 +1,36 @@
+
+@mixin border(){
+    border-radius: 30px;
+  }
+
+@mixin purple-button{
+  background-color: #5c75f1;
+  transition: all 0.2s;
+  padding: 0.4em 3em 0.4em 3em;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  &:hover{
+    background-color: #3e4fa3;
+  }
+}
+
+@mixin hidden(){
+  position: absolute !important;
+  // width: 1px !important;
+  // height: 1px !important;
+  // margin: -1px !important;
+  // border: 0 !important;
+  // padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+@mixin center{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+

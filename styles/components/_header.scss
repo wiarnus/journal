@@ -1,0 +1,166 @@
+@use '../tools';
+@import '../mixins';
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__convert{
+        @include border();
+        width: 98%;
+        background-color: white;
+        overflow: hidden;
+        font-size: 16px;
+}
+.header__UI{
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+.logo{
+    display: block; 
+    padding: 0px; 
+    color: #000; /* Цвет текста */
+    text-decoration: none; 
+    transition: all 0.2s;
+    h1,h2{
+        position: relative;
+        top: -100px;
+    }
+    h1{
+        font-family: var(--font-title);
+        font-weight: 400;
+        font-size: 2.3em;
+        padding-left: 6em;
+    }
+    h2{
+        font-family: var(--font-base);
+        color: var(--light-gray);
+        font-size: 1.08em;
+        padding-left: 13em;
+    }
+    img{
+        padding-left: 1.5em;
+        position: relative;
+        top: 70px;
+        scale: 0.75;
+    }
+    &:hover{
+        scale: 1.05;
+    }
+}
+
+.navigation {
+    padding-inline: 2em;
+    padding-bottom: 0.5em;
+    &__item{
+        position: relative;
+        transition: all 0.2s;
+        background: none;
+        border: none;
+        font-size: 1em;
+        font-family: var(--font-base);
+        width: 100px;
+        img {
+            scale: 0.4;
+        }
+        p{
+            margin-top: -1em;
+        }
+    }
+    &__item:hover{
+        scale: 1.3;
+        color: var(--purple);
+    }
+    &__item:active{
+        transition: all 0.1s;
+        scale: 1.15;
+    }
+}
+
+.main-navigation{
+    &__ege,&__news,&__teachers,&__profile{
+        display: none;
+    }
+    
+    position: relative;
+    display: flex;
+    background-color: #9e83d8;
+    width: 100%;
+    padding-left: 10em;
+    font-family: var(--font-base);
+    gap: 4em;
+    &__btn{
+        transition: all 0.1s;
+        margin-block: 0.3em;
+        font-size: 1.2em;
+        padding-block: 0.5em;
+        padding-inline: 1em;
+        border-radius: 20px;
+        color: white;
+        border: none;
+        background: none;
+    }
+    &__btn:hover{
+        background-color: #b897ff;
+        color: white;
+    }
+    &__btn:active{
+        scale: 0.90;
+    }
+}
+
+@media(max-width: 1350px) {
+    .header__UI{
+        font-size: 12px;
+        grid-template-columns: 1fr
+    }
+    .navigation{
+        padding-bottom: 2em;
+    }
+    .logo{
+        img{
+            top: 55px;
+            padding-left: 0;
+            scale: 0.43;
+        }
+    }
+    .main-navigation{
+        font-size: 13px;
+    }
+}
+@media(max-width: 700px) {
+    .header__UI{
+        font-size: 11px;
+        grid-template-columns: 1fr
+    }
+    .logo{
+        text-align: center;
+        img{
+            top: 0px;
+            left: 75px;
+            padding-left: 0;
+            scale: 0.55;
+        }
+        h1,h2{
+            top: 0px;
+            padding-left: 0px;
+        }
+    }
+    .navigation{
+        padding-inline: 0;
+        &__item{
+            width: 65px;
+        }
+    }
+    .main-navigation{
+        font-size: 10px;
+        padding-left: 3em;
+        gap: 1em;
+    }
+}

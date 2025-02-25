@@ -1,0 +1,79 @@
+@import '../styles/mixins';
+@use './styles/tools';
+
+
+.main-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: var(--font-base);
+    .container {
+        .error{
+            opacity: 0;
+            font-size: 0.9em;
+            color: red;
+            margin: 1em;
+            text-align: center;
+        }
+        .lox{
+            display: block;
+            position: relative;
+            margin-top: 10px;
+        }
+        .logo{
+            font-family: var(--font-title);
+            margin-bottom: 50px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            img{
+                height: auto;
+                width: 70px;
+                margin-right: 1em;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        @include border();
+        padding: 13em;
+
+        .entry{
+            @include border();
+            transition: all 0.1s;
+            border: none;
+            background-color: var(--purple);
+            color: white;
+            padding: 1em;
+            margin: 1em;
+            &:hover{
+                scale: 1.05;
+            }
+            &--teacher{
+                border: none;
+                background: none;
+                color: var(--selection-color);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+@media(max-width: 1350px){
+    .main-content{
+        font-size: 14px;
+        .container{
+            padding: clamp(40px, 15vw,200px);
+        }
+    }
+}
+
+@media(max-width: 700px){
+    .main-content{
+        font-size: 11px;
+        .container{
+            padding: clamp(40px, 10vw,200px);
+        }
+    }
+}

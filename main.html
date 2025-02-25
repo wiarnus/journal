@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
+    <title>Журнал</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header__convert">
+            <div class="header__UI">
+                <a href="" class="logo">
+                    <img class="logo__img" src="./images/sferum.png" alt="">
+                    <h1>Сферум журнал</h1>
+                    <h2>Школа МАОУ СОШ №212 • Новосибирская область</h2>
+                </a>
+        
+                <div class="navigation">
+                    <button class="navigation__item" id="navig0">
+                        <img src="images/book.png" alt="">
+                        <p class="navigation__text">Дневник</p>
+                    </button>
+                    <button class="navigation__item" id="navig1">
+                        <img src="images/teacher.png" alt="">
+                        <p class="navigation__text">Учителя</p>
+                    </button>
+                    <button class="navigation__item" id="navig2">
+                        <img src="images/profile.png" alt="">
+                        <p class="navigation__text">Профиль</p>
+                    </button>
+                    <button class="navigation__item" id="navig3">
+                        <img src="images/ege.png" alt="">
+                        <p class="navigation__text">ЕГЭ</p>
+                    </button>
+                    <button class="navigation__item" id="navig4">
+                        <img src="images/news.png" alt="">
+                        <p class="navigation__text">Новости</p>
+                    </button>
+                </div>
+            </div>
+            <div class="main-navigation">
+                <button class="main-navigation__btn" id="home">Главная</button>
+
+                <div class="main-navigation__journal">
+                    <button class="main-navigation__btn" id="schedule">Расписание</button>
+                    <button class="main-navigation__btn" id="journal">Дневник</button>
+                </div>
+                <div class="main-navigation__ege">
+                    <button class="main-navigation__btn">Предметы ЕГЭ</button>
+                </div>
+                <div class="main-navigation__news">
+                    <button class="main-navigation__btn">Новости</button>
+                </div>
+                <div class="main-navigation__teachers">
+                    <button class="main-navigation__btn">Учителя МАОУ СОШ №212</button>
+                </div>
+                <div class="main-navigation__profile">
+                    <button class="main-navigation__btn">Ваш профиль</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="main-banner">
+                <div class="main-banner__text">
+                    <p class="main-banner__h1">Учитесь вместе с Сферум</p>
+                    <p class="main-banner__p">Анализируйте свои результаты</p>
+                    <p class="main-banner__p">Узнавайте о актуальных новостях школы</p>
+                    <button id="btn1">Узнать больше →</button>
+                </div>
+                <img src="images/banner.png" alt="">
+            </div>
+
+            <div class="main-content">
+
+                <div class="main-content__schedule">
+                    <div class="main-content__schedule-flex">
+                        <div class="main-content__schedule-banners">
+                            <div class="banner-scroll">
+                                <div class="main-content__schedule-banner banner1">
+                                    <img src="./images/banner1.png" alt="">
+                                    <h3>Курсы по материалу</h3>
+                                    <p>Помогают не отставать от программы, и узнавать новое</p>
+                                </div>
+                                <div class="main-content__schedule-banner banner2">
+                                    <img src="./images/banner2.png" alt="">
+                                    <h3>Фокус на обучении</h3>
+                                    <p>В учебном профиле нет рекламы, спама и платных сервисов</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main-content__journal">
+                            <p class="polugodie">II Полугодие</p>
+                            <div class="main-content__journal-table" id="algebra">
+                                <div class="main-content__journal-double">
+                                    <p>Алгебра</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="biologiy">
+                                <div class="main-content__journal-double">
+                                    <p>Биология</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="main-content__journal-table" id="geographia">
+                                <div class="main-content__journal-double">
+                                    <p>География</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="geometry">
+                                <div class="main-content__journal-double">
+                                    <p>Геометрия</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="english">
+                                <div class="main-content__journal-double">
+                                    <p>Английский</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="informatika">
+                                <div class="main-content__journal-double">
+                                    <p>Информатика</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="main-content__journal-table" id="history">
+                                <div class="main-content__journal-double">
+                                    <p>История</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="literatura">
+                                <div class="main-content__journal-double">
+                                    <p>Литература</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="matPraktikum">
+                                <div class="main-content__journal-double">
+                                    <p>Мат. Практикум</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="obj">
+                                <div class="main-content__journal-double">
+                                    <p>ОБЖ</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="obshestvo">
+                                <div class="main-content__journal-double">
+                                    <p>Обществознание</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="osnoviProg">
+                                <div class="main-content__journal-double">
+                                    <p>Основы прог.</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="rus">
+                                <div class="main-content__journal-double">
+                                    <p>Русский язык</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="teory">
+                                <div class="main-content__journal-double">
+                                    <p>Теория в. и ст.</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="fizika">
+                                <div class="main-content__journal-double">
+                                    <p>Физика</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="fizra">
+                                <div class="main-content__journal-double">
+                                    <p>Физкультура</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+                            <div class="main-content__journal-table" id="himia">
+                                <div class="main-content__journal-double">
+                                    <p>Химия</p>
+                                    <div class="main-content__journal-double-average">5.00</div>
+                                </div>
+                                <div class="main-content__journal-grid">
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                    <div class="main-content__journal-grid-item"></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="main-content__schedule-tables">
+                            <div class="main-content__schedule-table">
+                                <p>Понедельник 10.02.2025</p>
+                                <div class="main-content__schedule-grid">
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content__schedule-table">
+                                <p>Вторник 11.02.2025</p>
+                                <div class="main-content__schedule-grid">
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content__schedule-table">
+                                <p>Среда 12.02.2025</p>
+                                <div class="main-content__schedule-grid">
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content__schedule-table">
+                                <p>Четверг 13.02.2025</p>
+                                <div class="main-content__schedule-grid">
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content__schedule-table">
+                                <p>Пятница 14.02.2025</p>
+                                <div class="main-content__schedule-grid">
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-content__schedule-table">
+                                <p>Суббота 15.02.2025</p>
+                                <div class="main-content__schedule-grid">
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div class="lesson"></div>
+                                    </div>
+                                    <div class="main-content__schedule-item">
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            
+                <div class="main-content__teachers">
+                    <div class="pedik">
+                        <div class="main-content__teachers-container">
+                            <img src="./images/krest.png" alt="">
+                            <p>Временно не доступно</p>
+                            <p>Повторите попытку позже</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content__ege">
+                    <div class="main-content__ege-background">
+                        <div class="main-content__ege-container">
+                            <div class="main-content__ege-grid">
+                                <p>Предмет ЕГЭ</p>
+                                <p>Дата сдачи</p>
+                                <p>Профильная Математика</p>
+                                <p>27 мая</p>
+                                <p>Русский язык</p>
+                                <p>30 мая</p>
+                                <p>Информатика</p>
+                                <p>10 и 11 июня</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-content__profile">
+                    <div class="main-content__profile-background">
+                        <div class="main-content__profile-photo">
+                            <img src="./images/user.jpg" alt="">
+                            <button>Смненить фото</button>
+                        </div>
+                        
+                        <div class="main-content__profile-data">
+                            <div class="main-content__profile-name">ФИО: Быков Даниил Александрович</div>
+                            <div class="main-content__profile-date">Дата: 16.04.2007</div>
+                            <div class="main-content__profile-id">ID Учащегося: 996307890</div>
+                            <div class="main-content__profile-class">Класс: 11А</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content__news"></div>
+
+                <footer>
+                    <div class="footer-container">
+
+                        <div class="footer-container__logo">
+                            <img src="./images/sferum.png" alt="">
+                            <p>Сферум</p>
+                        </div>
+                        <div class="footer-container__center">
+                            <a href="https://prof.sferum.ru/privacy_policy">Политика конфиденциальности</a>
+                            <a href="https://prof.sferum.ru/terms_of_use">Пользовательское соглашение</a>
+                            <a href="https://sferum.ru/static/instructions/other/Instrukciya_dlya_uchenika.pdf">Документация</a>
+                        </div>
+                        <div class="footer-container__last">
+                            <p>© 2025 Сферум. Все права защищены</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="./scripts/banner.js"></script>
+        <script src="./scripts/lesson.js"></script>
+        <script src="./scripts/buttons.js"></script>
+        <script src="./scripts/journal.js"></script>
+    </main>
+</body>
+</html>
